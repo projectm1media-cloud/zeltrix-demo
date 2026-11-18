@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es-ES" data-root="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Carrito y finalizar compra | Zeltrix</title>
+<meta name="description" content="Revisa tu carrito y finaliza tu pedido en Zeltrix.">
+<link rel="canonical" href="https://zeltrix.shop/cart">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#0b0b0d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zeltrix">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Carrito y finalizar compra | Zeltrix">
+<meta property="og:description" content="Revisa tu carrito y finaliza tu pedido en Zeltrix.">
+<meta property="og:url" content="https://zeltrix.shop/cart">
+<meta property="og:image" content="https://zeltrix.shop/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="assets/img/favicon-64.png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://zeltrix.shop/#org", "name": "Zeltrix", "url": "https://zeltrix.shop", "logo": "https://zeltrix.shop/assets/img/icon-512.png"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="ann">Black Friday · Gafas de luz roja a <strong>25,00 €</strong> · Envío en 24/48 h</div>
+<header class="hdr"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Zeltrix, inicio"><img src="assets/img/logo-white.png" alt="ZELTRIX" width="420" height="35"></a>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="index.html#productos">Productos</a><a href="products/gafas-luz-roja-anti-ojeras.html">Gafas de luz roja</a><a href="products/mini-banco-de-energia-ultra-compacto-5000mah-negro-con-cable-integrado.html">Mini cargador</a><a href="pages/contact.html">Contacto</a>
+  </nav>
+  <div class="hdr-r">
+    <button class="icon-btn" data-open-cart aria-label="Abrir carrito"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" data-cart-count hidden>0</span></button>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menú" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</div></header>
+<main id="main">
+
+<div class="wrap">
+<div id="co-view">
+  <div class="page-h"><h1>Tu carrito</h1></div>
+  <div class="co">
+    <div>
+      <div class="panel"><ul id="cart-lines"></ul></div>
+      <form id="co-form" hidden style="margin-top:18px">
+        <div class="panel"><h2>Contacto</h2><div class="f">
+          <div class="fld"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com"></div></div></div>
+        <div class="panel"><h2>Entrega</h2><div class="f">
+          <div class="f2"><div class="fld"><label for="fn">Nombre</label><input id="fn" name="fn" required autocomplete="given-name" placeholder=" "></div>
+            <div class="fld"><label for="ln">Apellidos</label><input id="ln" name="ln" required autocomplete="family-name" placeholder=" "></div></div>
+          <div class="fld"><label for="ad">Dirección</label><input id="ad" name="ad" required autocomplete="street-address" placeholder=" "></div>
+          <div class="f2"><div class="fld"><label for="zp">Código postal</label><input id="zp" name="zp" required inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" placeholder=" "></div>
+            <div class="fld"><label for="ct">Ciudad</label><input id="ct" name="ct" required autocomplete="address-level2" placeholder=" "></div></div>
+          <div class="f2"><div class="fld"><label for="cn">País</label><select id="cn" name="cn" autocomplete="country"><option>España</option><option>Portugal</option><option>Francia</option><option>Italia</option><option>Alemania</option></select></div>
+            <div class="fld"><label for="ph">Teléfono (opcional)</label><input id="ph" name="ph" type="tel" autocomplete="tel" placeholder=" "></div></div>
+        </div></div>
+        <div class="panel"><h2>Pago</h2>
+          <div class="demo-note"><span>ⓘ</span><span><b>Modo demostración.</b> Esta tienda es una demo: no se procesa ningún pago ni se envía ningún pedido real.</span></div>
+          <div class="pm"><label><input type="radio" name="pm" value="card" checked> Tarjeta de crédito o débito</label><label><input type="radio" name="pm" value="paypal"> PayPal</label></div>
+        </div>
+        <button class="btn btn-glow btn-block" style="margin-top:18px" type="submit">Completar pedido (demo)</button>
+      </form>
+    </div>
+    <aside class="aside panel"><h2>Resumen</h2>
+      <div class="sum" style="margin-bottom:10px"><span>Subtotal</span><span data-sum-sub>0,00 €</span></div>
+      <div class="sum" style="margin-bottom:10px"><span>Envío</span><span>24/48 h</span></div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+      <div class="sum t"><span>Total</span><span data-sum-total>0,00 €</span></div>
+      <p class="note" style="margin-top:12px">Impuestos incluidos. 30 días para devoluciones.</p>
+    </aside>
+  </div>
+</div>
+<div class="done" id="done-view" hidden>
+  <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></div>
+  <h1>¡Pedido de demostración completado!</h1>
+  <p>Número de pedido <b id="done-order"></b> · Total <b id="done-total"></b>.</p>
+  <p>En una tienda real enviaríamos la confirmación a <b id="done-email"></b>. Aquí no se ha cobrado ni enviado nada.</p>
+  <p style="margin-top:26px"><a class="btn btn-ink" href="index.html">Volver a la tienda</a></p>
+</div>
+</div>
+</main>
+<footer class="ftr"><div class="wrap">
+  <div class="cols">
+    <div><img src="assets/img/logo-white.png" alt="ZELTRIX" width="420" height="35" loading="lazy">
+      <p style="max-width:34ch">Pequeños dispositivos de cuidado personal y tecnología diaria. Envío en 24/48 h y 30 días para devoluciones.</p></div>
+    <div><h4>Tienda</h4><ul>
+      <li><a href="products/gafas-luz-roja-anti-ojeras.html">Gafas de luz roja</a></li>
+      <li><a href="products/mini-banco-de-energia-ultra-compacto-5000mah-negro-con-cable-integrado.html">Mini cargador 5000 mAh</a></li>
+      <li><a href="cart.html">Carrito</a></li></ul></div>
+    <div><h4>Ayuda</h4><ul>
+      <li><a href="pages/contact.html">Contacto</a></li>
+      <li><a href="policies/refund-policy.html">Envíos y devoluciones</a></li>
+      <li><a href="policies/privacy-policy.html">Política de privacidad</a></li>
+      <li><a href="policies/terms-of-service.html">Términos del servicio</a></li></ul></div>
+  </div>
+  <div class="bot"><span>© 2026 zeltrix.shop</span><span>Los dispositivos de cuidado personal no son productos sanitarios.</span></div>
+</div></footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" aria-hidden="true">
+  <div class="dr-h"><h2 id="dr-title">Tu carrito</h2><button class="icon-btn" id="drawer-close" aria-label="Cerrar carrito" style="color:var(--text)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="dr-b"><ul id="drawer-lines"></ul></div>
+  <div class="dr-f" id="drawer-foot" hidden>
+    <div class="sum t"><span>Subtotal</span><span id="drawer-total">0,00 €</span></div>
+    <p class="note">Impuestos incluidos. Envío y descuentos en el siguiente paso.</p>
+    <a class="btn btn-glow btn-block" href="cart.html">Finalizar compra</a>
+  </div>
+</aside>
+<script src="assets/main.js" defer></script>
+</body>
+</html>
